@@ -49,7 +49,9 @@ dependencies {
     implementation 'androidx.media2:media2-player:1.0.1' // Assets/MoPub/Scripts/Editor/MoPubDependencies.xml:8
     implementation 'androidx.media2:media2-session:1.0.1' // Assets/MoPub/Scripts/Editor/MoPubDependencies.xml:6
     implementation 'androidx.media2:media2-widget:1.0.1' // Assets/MoPub/Scripts/Editor/MoPubDependencies.xml:7
+    implementation 'com.facebook.android:audience-network-sdk:5.9.1' // Assets/MoPub/Mediation/FacebookAudienceNetwork/Editor/FacebookAudienceNetworkDependencies.xml:5
     implementation 'com.google.code.gson:gson:2.8.5' // Assets/MoPub/Scripts/Editor/MoPubDependencies.xml:10
+    implementation 'com.mopub.mediation:facebookaudiencenetwork:5.9.1.0' // Assets/MoPub/Mediation/FacebookAudienceNetwork/Editor/FacebookAudienceNetworkDependencies.xml:4
     implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.61' // Assets/MoPub/Scripts/Editor/MoPubDependencies.xml:5
 // Android Resolver Dependencies End
 **DEPS**}
@@ -61,6 +63,7 @@ android {
       exclude ('/lib/armeabi/*' + '*')
       exclude ('/lib/mips/*' + '*')
       exclude ('/lib/mips64/*' + '*')
+      exclude ('/lib/x86/*' + '*')
       exclude ('/lib/x86_64/*' + '*')
   }
 }
