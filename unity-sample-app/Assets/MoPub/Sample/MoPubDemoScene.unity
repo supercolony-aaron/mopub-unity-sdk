@@ -1468,3 +1468,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enabledOptions: []
+--- !u!114 &1670739661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670739659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f807f7721d5194ddda55870b64ca8dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enabledOptions: []
+--- !u!114 &1670739662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670739659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa95d6b9baacf41e689a6349c57bc28f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enabledOptions:
+  - testDeviceId
+  contentUrl: 
+  testDeviceId: 5f8f7def-7008-498e-9af4-0c2941af787c
+  taggedForChildDirectedTreatment: 0
+  taggedForUnderAgeOfConsent: 0

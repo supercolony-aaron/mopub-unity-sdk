@@ -1,3 +1,60 @@
+# Version 1.2.156 - June 10, 2020
+* All: Described EDM4U analytics data usage in readme.
+* Android Resolver: Fixed that the generated local repo assets contains
+  redundent labels which are causing Version Handler to failed while
+  uninstalling packages.
+* Android Resolver: Fixed that the repo url injected into mainTemplate.gradle
+  is incorrect when Unity is configured to export gradle project.
+* Android Resolver: Limited to only create local Maven repo when the source
+  repo contains ".srcaar" file.
+
+# Version 1.2.155 - May 14, 2020
+* All: Fixed compiler error when build with Unity 5.4 or below due to the
+  usage of Rect.zero.
+* All: Ignore cases when checking command line arguments.
+
+# Version 1.2.154 - May 14, 2020
+* All: Make each MultiSelectWindow for different purposes to have its own
+  unique window.
+* All: Replace all dialog with DialogWindow which is implemented from
+  EditorWindow.
+* Package Manager Resolver: Clarify how manifest.json will be changed in Package
+  Manager Resolver window.
+
+# Version 1.2.153 - Apr 24, 2020
+* Android Resolver: Fixed an exception when repainting the Android resolution
+  window in Unity 2019.3.x.
+
+# Version 1.2.152 - Apr 17, 2020
+* Version Handler: Fixed exception when waiting for enabled editor DLLs to
+  load.
+* Android Resolver: Fixed regression when using a Custom Gradle Template
+  on Windows.
+
+# Version 1.2.151 - Apr 16, 2020
+## Bug Fixes
+* Version Handler: When waiting for newly enabled editor DLLs to load, ignore
+  all DLLs that do not have a file-system location.
+* Android Resolver: Fixed resolution when using a Custom Gradle Template with
+  libraries stored in a local maven repository distributed with a plugin
+  installed with the Unity Package Manager.
+
+# Version 1.2.150 - Apr 9, 2020
+## Bug Fixes
+* All: The new packaging script when run on MacOS was generating a
+  .unitypackage archive that could not be read by Unity on Windows.
+  This release simply repackages the plugin with tar/gzip to fix the problem.
+
+# Version 1.2.149 - Apr 8, 2020
+## Bug Fixes
+* Package Manager Resolver: Fixed spurious error message when resuming
+  migration after installing a UPM package.
+
+# Version 1.2.148 - Apr 8, 2020
+## Bug Fixes
+* Package Manager Resolver: Fixed an exception when resuming migration
+  after installing a UPM package.
+
 # Version 1.2.147 - Apr 8, 2020
 ## Bug Fixes
 * Version Handler: Fixed alias traversal bug which caused problems when
@@ -10,7 +67,7 @@
 
 # Version 1.2.145 - Apr 2, 2020
 ## New Features
-* Unity Package Manager Resolver: Added a method to migrate Version Handler
+* Package Manager Resolver: Added a method to migrate Version Handler
   managed packages installed via `.unitypackage` to Unity Package Manager
   packages. This is initially used to migrate the External Dependency Manager
   to UPM.
@@ -50,7 +107,7 @@
 
 # Version 1.2.142 - Mar 19, 2020
 ## Changes
-* Unity Package Manager Resolver: Enabled auto-add by default.
+* Package Manager Resolver: Enabled auto-add by default.
 
 # Version 1.2.141 - Mar 19, 2020
 ## Bug Fixes
@@ -73,7 +130,7 @@
 
 # Version 1.2.138 - Mar 17, 2020
 ## New Features
-* Unity Package Manager Resolver: Added the Unity Package Manager Resolver
+* Package Manager Resolver: Added the Package Manager Resolver
   component that allows developers to easily boostrap Unity Package Manager
   (UPM) registry addition using unitypackage plugins.
 * Version Handler: Added a window that allows plugins to managed by the
